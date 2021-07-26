@@ -44,8 +44,8 @@ function fetchGiphy(){
             for(let i=0;i<10;i++){
                 var imgSrc = giphyData.data[i].images.downsized.url;
                 var imgId = "gif-img"+i;
-                document.getElementById(imgId).style.width = "25rem";
-                document.getElementById(imgId).style.height = "20rem";
+                document.getElementById(imgId).style.width = "20rem";
+                document.getElementById(imgId).style.height = "18rem";
                 var imgG = document.getElementById(imgId);
                 imgG.src = imgSrc;
                 imgG.alt =  giphyData.data[i].title;
