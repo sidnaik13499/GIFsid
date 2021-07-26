@@ -8,7 +8,7 @@ if (window.location.protocol.indexOf('https') == 0){
 function fetchGiphy(){
     var apiKey = "hhKSYOIPega6fQJYkfMBogdncYdxelCi";
     var inp = document.getElementById("search-g").value;
-    var url = "http://api.giphy.com/v1/gifs/search?q="+inp+"&api_key="+apiKey+"&limit=10";
+    var url = "https://cors-everywhere.herokuapp.com/http://api.giphy.com/v1/gifs/search?q="+inp+"&api_key="+apiKey+"&limit=10";
 
     var xhr = new XMLHttpRequest();
 
